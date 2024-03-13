@@ -1,0 +1,123 @@
+% teamnote.sty from https://github.com/ho94949/teamnote.sty
+
+% Team Note Sample Template
+% These codes should be guaranteed, fast enough, short and easy to type.
+
+\documentclass[portrait, 8pt, a4paper, oneside, twocolumn]{extarticle}
+\usepackage{teamnote}
+
+% Uncomment below to use Korean
+\usepackage{kotex}
+
+\teamnote{}{}{}
+
+\ShowUsage
+\ShowComplexity
+\HideAuthor
+
+\begin{document}
+
+\maketitlepage
+
+% Make Pagebreak if you want.
+\pagebreak
+
+\section{Math}
+
+\Algorithm{GCD, LCM}{}{$O$($log N$)}{cpp}{source/math/gcd.cpp}{saywoo}
+
+\Algorithm{Fast Power}{}{$O$($log N$)}{cpp}{source/math/pow.cpp}{saywoo}
+
+\Algorithm{Fast Combination}{}{$O$($N+K$)}{cpp}{source/math/fast-comb.cpp}{saywoo}
+
+\Algorithm{Sieve of Eratosthenes}{}{$O$($N log^2 N$)}{cpp}{source/math/sieve.cpp}{saywoo}
+
+\Algorithm{Linear Sieve}{}{$O$($N$)}{cpp}{source/math/linearsieve.cpp}{saywoo}
+
+\Algorithm{Fraction}{}{}{cpp}{source/math/fraction.cpp}{saywoo}
+
+\Algorithm{Miller-Rabin}{}{$O$($log N$)}{cpp}{source/math/miller-rabin.cpp}{saywoo}
+
+\Algorithm{Pollard-Rho}{}{$O$($N^{1/4}$)}{cpp}{source/math/pollard-rho.cpp}{saywoo}
+
+\Algorithm{Catalan Number}{}
+{$O$($N^2$)}{cpp}{source/math/catalan-number.cpp}{koderpark}
+
+\Algorithm{FFT}{}{$O$($N log N$)}{cpp}{source/math/fft.cpp}{saywoo}
+
+
+\section{Graph}
+
+\Algorithm{Dijkstra}{}{$O$($V log E$)}{cpp}{source/graph/dijkstra.cpp}{saywoo}
+
+\Algorithm{Bellman-Ford}{}{$O$($VE$)}{cpp}{source/graph/bellman-ford.cpp}{saywoo}
+
+\Algorithm{Floyd-Warshall}{}{$O$($V^3$)}{cpp}{source/graph/floyd-warshall.cpp}{saywoo}
+
+\Algorithm{SPFA}{}{Average : $O$($V + E$),  Worst : $O$($VE$)}{cpp}{source/graph/spfa.cpp}{saywoo}
+
+\Algorithm{Minimum Spanning Tree}{}{}{cpp}{source/graph/mst.cpp}{saywoo}
+
+\Algorithm{Lowest Common Ancestor}{}{Init : $O$($N log N$), 
+ Query : $O$($log N$)}{cpp}{source/graph/lca.cpp}{saywoo}
+
+\Algorithm{Topological Sorting}{}{$O$($N$)}{cpp}{source/graph/ts.cpp}{saywoo}
+
+\Algorithm{Euler Tour Technique}{}{$O$($N$)}{cpp}{source/graph/ett.cpp}{saywoo}
+
+\Algorithm{SCC - Tarjan}{}{}{cpp}{source/graph/scc.cpp}{dk10211}
+
+\Algorithm{Heavy Light Decomposition}{}{}{cpp}{source/graph/hld.cpp}{https://github.com/justiceHui/icpc-teamnote-for-newbie}
+
+
+\section{Flow}
+
+\Algorithm{Dinic}{}{}{cpp}{source/flow/dinic.cpp}{dk10211}
+
+\Algorithm{Bipartite Matching}{}{}{cpp}{source/flow/bit-matching.cpp}{dk10211}
+
+\Algorithm{Edmonds-Karp}{}{}{cpp}{source/flow/edmonds-karp.cpp}{dk10211}
+
+
+\section{String}
+
+\Algorithm{KMP}{}{$O$($|A| + |B|$)}{cpp}{source/string/kmp.cpp}{saywoo}
+
+\Algorithm{Trie}{}{$O$($V log E$)}{cpp}{source/string/trie.cpp}{saywoo}
+
+\Algorithm{Aho-Corasick}{}{}{cpp}{source/string/aho-corasick.cpp}{koderpark}
+
+\Algorithm{Manacher}{}{$O$($N$)}{cpp}{source/string/manacher.cpp}{saywoo}
+
+
+\section{Data Structure}
+
+\Algorithm{Union Find}{}{$O$($a$($N$))}{cpp}{source/data-structure/union-find.cpp}{saywoo}
+
+\Algorithm{Segment Tree}{}{Update : $O$($log N$) ,  Query : $O$($log N$)}{cpp}{source/data-structure/segtree.cpp}{saywoo}
+
+\Algorithm{Fenwick Tree}{}{}{cpp}{source/data-structure/fenwicktree.cpp}{dk10211}
+
+\Algorithm{Segment Tree with Lazy Propagation}{}{Update : $O$($log N$),  Query : $O$($log N$)}{cpp}{source/data-structure/lazysegtree.cpp}{saywoo}
+
+\Algorithm{Merge Sort Tree}{}{Query : $O$($log^2 N$)}{cpp}{source/data-structure/mergesorttree.cpp}{saywoo}
+
+\Algorithm{Li-Chao Tree}{}{Update : $O$($log N$),  Query : $O$($log N$)}{cpp}{source/data-structure/lichaotree.cpp}{saywoo}
+
+
+\section{Etc}
+
+\Algorithm{좌표 압축}{}{$O$($N log N$)}{cpp}{source/etc/coordinate-compression.cpp}{saywoo}
+
+\Algorithm{Binary Search}{}{$O$($log N$)}{cpp}{source/etc/binary-search.cpp}{saywoo}
+
+\Algorithm{Tenary Search}{}{$O$($log N$)}{cpp}{source/etc/tenary-search.cpp}{saywoo}
+
+\Algorithm{랜덤 템플릿}{}{}{cpp}{source/etc/random.cpp}{saywoo}
+
+\Algorithm{Simulated Annealing}{}{}{cpp}{source/etc/sa.cpp}{saywoo}
+
+\Algorithm{C++ 코드 템플릿 + Ofast}{}{}{cpp}{source/etc/ofast.cpp}{saywoo}
+
+
+\end{document}
